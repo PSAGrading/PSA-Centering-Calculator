@@ -35,7 +35,7 @@
             let total = left + right;
             let leftPercent = (left / total) * 100;
             let rightPercent = (right / total) * 100;
-            let finalPercent = Math.max(leftPercent, rightPercent); // Determines the larger offset
+            let finalPercent = Math.min(leftPercent, rightPercent); // Determines the larger offset
 
             // Corrected grading system based on finalPercent
             let centeringGrade;
